@@ -7,13 +7,13 @@
   <meta name="description" content="Ultimate Pet-Davis, LLC — professional pet cleaning & care services in Davis, CA. Brown & black aesthetic."/>
   <style>
     :root{
-      --brown:#8b5e34;        /* primary brown */
-      --brown-2:#c49a6c;      /* lighter brown */
-      --brown-dark:#5c3c22;   /* dark brown */
-      --ink:#f3f4f6;          /* light text */
-      --muted:#c9c9c9;        /* muted text */
-      --bg:#0a0a0a;           /* deep black */
-      --card:#111111;         /* card surface */
+      --brown:#8b5e34;
+      --brown-2:#c49a6c;
+      --brown-dark:#5c3c22;
+      --ink:#f3f4f6;
+      --muted:#c9c9c9;
+      --bg:#0a0a0a;
+      --card:#111111;
     }
     *{box-sizing:border-box}
     html,body{
@@ -30,7 +30,6 @@
     img{max-width:100%;display:block}
     .container{max-width:1140px;margin:0 auto;padding:24px}
 
-    /* Header */
     header{position:sticky; top:0; z-index:40;}
     .topbar{
       backdrop-filter:saturate(140%) blur(10px);
@@ -52,7 +51,6 @@
       box-shadow:0 8px 24px rgba(139,94,52,.35)
     }
 
-    /* Hero */
     .hero-wrap{padding:56px 24px; background:radial-gradient(600px 360px at 70% -20%, rgba(196,154,108,.18), transparent 60%)}
     .hero-card{
       background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
@@ -79,12 +77,10 @@
     }
     .hero-media img{object-fit:cover; width:100%; height:100%; filter:saturate(1.05)}
 
-    /* Sections */
     section{padding:64px 24px}
     section h2{font-size:clamp(22px,3vw,34px); margin:0 0 14px; font-weight:900; color:#ead9c6}
     .muted{color:var(--muted)}
 
-    /* Cards */
     .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px}
     .card{
       border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:18px;
@@ -95,7 +91,6 @@
     @keyframes reveal{to{transform:translateY(0); opacity:1}}
     .card h3{margin:0 0 6px; font-size:1.06rem; color:#f5e7d7}
 
-    /* Gallery */
     .gallery{display:grid; grid-template-columns:repeat(12,1fr); gap:12px}
     .gallery img{border-radius:16px; aspect-ratio:4/3; object-fit:cover}
     .gallery img:nth-child(1){grid-column:span 7}
@@ -103,7 +98,6 @@
     .gallery img:nth-child(3){grid-column:span 5}
     .gallery img:nth-child(4){grid-column:span 7}
 
-    /* Contact */
     .contact-box{
       background:linear-gradient(135deg, rgba(139,94,52,.18), rgba(196,154,108,.14));
       color:#fff0de; border-radius:20px; padding:22px; display:grid; gap:10px; border:1px solid rgba(255,255,255,.12)
@@ -126,7 +120,6 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header>
     <div class="topbar container">
       <div class="brand">Ultimate Pet-Davis, LLC</div>
@@ -139,14 +132,13 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <div class="hero-wrap">
     <div class="container">
       <div class="hero-card">
         <div>
           <span class="hero-badge">Pet Cleaning Service</span>
           <h1 class="hero-title">Clean, comfy pets with <span class="grad">care & love</span>.</h1>
-          <p class="hero-sub">Ultimate Pet-Davis, LLC يقدم خدمات تنظيف ورعاية للحيوانات الأليفة—استحمام، تجفيف، إزالة العقد، وتنظيف الأدوات. Davis, California.</p>
+          <p class="hero-sub">Ultimate Pet-Davis, LLC provides professional pet cleaning and grooming services—bathing, drying, brushing, and grooming for happy, healthy pets. Based in Davis, California.</p>
           <div class="hero-actions">
             <a class="btn" href="#services">See Services</a>
             <a class="btn secondary" href="#contact">Book / Contact</a>
@@ -163,32 +155,29 @@
     </div>
   </div>
 
-  <!-- About -->
   <section id="about" class="container">
     <h2>About Us</h2>
     <p class="muted">
-      نوفّر تجربة تنظيف لطيفة وآمنة باستخدام منتجات مناسبة للكلاب والقطط. فريقنا مدرَّب على التعامل مع الحيوانات المتوترة بلطف وصبر.
+      We offer gentle, safe cleaning experiences using pet-friendly products. Our trained team handles anxious pets with patience and care to make grooming stress-free.
     </p>
-    <div class="cards" style="margin-top:12px">
-      <article class="card reveal"><h3>Gentle Bathing</h3><p>شامبو لطيف وتجفيف دافئ لتجربة مريحة.</p></article>
-      <article class="card reveal"><h3>De-Shedding</h3><p>تقليل تساقط الشعر بالفرش المتخصصة.</p></article>
-      <article class="card reveal"><h3>Nail & Ear Care</h3><p>قص الأظافر وتنظيف الأذن بأمان.</p></article>
-      <article class="card reveal"><h3>Sanitary Trim</h3><p>تهذيب مناطق محددة للحفاظ على النظافة.</p></article>
+    <div class="cards">
+      <article class="card reveal"><h3>Gentle Bathing</h3><p>Soft shampoo and warm drying for comfort.</p></article>
+      <article class="card reveal"><h3>De-Shedding</h3><p>Reduces fur shedding using professional brushes.</p></article>
+      <article class="card reveal"><h3>Nail & Ear Care</h3><p>Safe nail trimming and ear cleaning.</p></article>
+      <article class="card reveal"><h3>Sanitary Trim</h3><p>Targeted trimming for cleanliness and hygiene.</p></article>
     </div>
   </section>
 
-  <!-- Services -->
   <section id="services" class="container">
     <h2>Our Services</h2>
     <div class="cards">
-      <article class="card reveal"><h3>Full Groom</h3><p>استحمام، تجفيف، قص، عناية أذن/أظافر.</p><span class="muted">للكلاب والقطط</span></article>
-      <article class="card reveal"><h3>Quick Wash</h3><p>غسل وتجفيف سريع بعد اللعب أو المطر.</p><span class="muted">30–45 دقيقة</span></article>
-      <article class="card reveal"><h3>Puppy Intro</h3><p>جلسات قصيرة لتعويد الجراء على العناية.</p><span class="muted">خفيف ولطيف</span></article>
-      <article class="card reveal"><h3>Add-Ons</h3><p>فرش أسنان، معطّر فراء، إزالة عقد.</p><span class="muted">حسب الطلب</span></article>
+      <article class="card reveal"><h3>Full Groom</h3><p>Bath, blow-dry, haircut, ear & nail care.</p><span class="muted">For dogs & cats</span></article>
+      <article class="card reveal"><h3>Quick Wash</h3><p>Fast wash and dry after play or rain.</p><span class="muted">30–45 minutes</span></article>
+      <article class="card reveal"><h3>Puppy Intro</h3><p>Short, gentle sessions to introduce puppies to grooming.</p><span class="muted">Calm & easy</span></article>
+      <article class="card reveal"><h3>Add-Ons</h3><p>Teeth brushing, fur deodorizing, detangling.</p><span class="muted">By request</span></article>
     </div>
   </section>
 
-  <!-- Gallery -->
   <section id="gallery" class="container">
     <h2>Gallery</h2>
     <div class="gallery">
@@ -199,7 +188,6 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="container">
     <h2>Contact</h2>
     <div class="contact-box">
@@ -209,9 +197,9 @@
       <div><strong>Email:</strong> info@cenvalin.shop</div>
       <div><strong>Address:</strong> ST, Davis, CA 95616-4142, United States</div>
       <div class="contact-actions">
-        <a href="mailto:info@cenvalin.shop?subject=Booking%20Inquiry%20-%20Ultimate%20Pet-Davis" target="_blank" rel="noopener">Email Us</a>
+        <a href="mailto:info@cenvalin.shop?subject=Booking%20Inquiry%20-%20Ultimate%20Pet-Davis" target="_blank">Email Us</a>
         <a href="tel:+17793106677">Call Now</a>
-        <a href="https://wa.me/17793106677" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/17793106677" target="_blank">WhatsApp</a>
       </div>
     </div>
   </section>
